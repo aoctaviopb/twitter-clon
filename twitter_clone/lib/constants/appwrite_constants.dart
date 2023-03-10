@@ -5,4 +5,6 @@ class AppwriteConstants {
   static const String endPoint = 'http://192.168.1.1:80/v1'; //Si hay problema, cambiar localhost por ip
 
   static const String usersCollection = '63fcdebca5c30501f6e3';
+  static const String tweetCollection = '640b5287e8fd98eaa8a0';
+
 }
