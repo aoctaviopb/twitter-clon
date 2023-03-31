@@ -1,4 +1,3 @@
-
 import 'dart:io';
 
 import 'package:carousel_slider/carousel_slider.dart';
@@ -39,6 +38,7 @@ class _CreateTweetScreenState extends ConsumerState<CreateTweetScreen> {
           text: tweetTextController.text,
           context: context,
         );
+    Navigator.pop(context);
   }
 
   void onPickImages() async {
