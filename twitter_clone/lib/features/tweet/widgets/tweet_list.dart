@@ -16,7 +16,8 @@ class TweetList extends ConsumerWidget {
             return ref.watch(getLatestTweetProvider).when(
                 data: (data) {
                   if (data.events.contains(
-                      'databases.*.collections.${AppwriteConstants.tweetCollection}.documents.*.create')) {
+                    'databases.*.collections.${AppwriteConstants.tweetCollection}.documents.*.create',
+                  )) {
                     tweets.insert(0, Tweet.fromMap(data.payload));
                   }
                   return ListView.builder(
